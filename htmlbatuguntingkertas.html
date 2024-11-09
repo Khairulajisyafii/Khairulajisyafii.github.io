@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    </head>
+    <body>
+<script>
+  let coumpond = ["batu","gunting","kertas"];
+    let rslt = coumpond[Math.floor(Math.random() * coumpond.length)];
+
+    let user;
+        var a = prompt("pilihlah diantara batu,gunting, dan kertas");
+    user = a;
+
+         if(rslt == "batu" && user =="kertas"){
+                    document.write("komputer memilih batu kamu kalah!!");
+             }else if(rslt == "kertas" && user =="gunting"){
+                    document.write("komputer memilih batu kamu menang!!");
+             }else if(rslt == "batu" && user =="kertas"){
+                    document.write("komputer memilih gunting kamu kalah!!");
+             }else if(rslt == "kertas" && user =="gunting"){
+                    document.write("komputer memilih gunting kamu menang!!");
+             }else if(rslt == "gunting" && user =="batu"){
+                    document.write("komputer memilih kertas kamu menang!!");
+             }else if(rslt == "kertas" && user =="gunting"){
+                    document.write("komputer memilih kertas kamu kalah!!");
+             }else if(rslt == user){
+                    document.write("GAME SERI!!");
+         }else{
+                document.write("tidak valid!!")};
+</script>
+    
+    </body>
+    </html>
