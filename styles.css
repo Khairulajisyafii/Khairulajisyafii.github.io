@@ -6,36 +6,154 @@ body {
   background-color: #1a1a1d;
   z-index: -1;
 }
-
+img.profil {
+  width: auto;
+  height: 80%;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-left: 3%;
+}
+span.profil {
+  background-color: #35424a;
+  display: flex;
+  width: 50%;
+}
+nav {
+  top: 0;
+  background-color: #000000;
+  position: sticky;
+  width: 100%;
+  z-index: 300;
+  display: flex;
+  overflow: visible;
+  height: 110px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li.Nameuser {
+  color: #ffffff;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 30px;
+}
+nav ul li {
+  color: #ffffff;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 46px;
+}
+p.headf {
+  margin: 200px 90px 90px 90px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+}
 header {
-  background: #424242;
   color: #ffffff;
   padding: 20px 0;
   text-align: center;
+  margin-top: 100px;
 }
 
-h1 {
+header h1 {
+  font-size: 80px;
   margin: 0;
 }
 
-section {
-  margin-top: 50px;
-  margin: 30px;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+header p {
+  font-size: 20px;
 }
 
-h2 {
+section {
+  height: auto;
+  margin: 0 20%;
+  padding: 30px 20px;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+section li {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+section ul {
+  list-style-type: none;
+}
+section div {
+  margin-left: 0;
+  margin: 5px;
+  background: #ffffff;
+  border-radius: 20px;
+  height: 15px;
+  width: 95%;
+}
+section div div.d1 {
+  margin-left: 0;
+  background: #da0037;
+  border-radius: 20px;
+  height: 15px;
+  width: 70%;
+  z-index: 2;
+}
+section div div.d2 {
+  margin-left: 0;
+  background: #da0037;
+  border-radius: 20px;
+  height: 15px;
+  width: 32%;
+  z-index: 2;
+}
+section div div.d3 {
+  margin-left: 0;
+  background: #da0037;
+  border-radius: 20px;
+  height: 15px;
+  width: 15%;
+  z-index: 2;
+}
+section div div.d4 {
+  margin-left: 0;
+  background: #da0037;
+  border-radius: 20px;
+  height: 15px;
+  width: 35%;
+  z-index: 2;
+}
+section div div.d5 {
+  margin-left: 0;
+  background: #da0037;
+  border-radius: 20px;
+  height: 15px;
+  width: 10%;
+  z-index: 2;
+}
+section h2 {
+  padding-left: 25px;
+  padding-top: 15px;
   color: #35424a;
+  text-align: justify;
 }
 
 footer {
+  margin-top: 100px;
   text-align: center;
   padding: 10px 0;
   background: #35424a;
   color: #ffffff;
   z-index: 2;
+}
+p a {
+  text-decoration: none;
+  color: white;
 }
