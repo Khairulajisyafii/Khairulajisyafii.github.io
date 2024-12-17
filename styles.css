@@ -13,13 +13,7 @@ img.profil {
   border-radius: 100%;
   margin-top: 10px;
   margin-left: 3%;
-}
-
-span.profil {
-  background-color: #35424a;
-  display: flex;
-  width: 50%; /* Menggunakan persen untuk lebar span */
-}
+}
 
 nav {
   top: 0;
