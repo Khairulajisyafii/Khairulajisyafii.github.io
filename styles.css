@@ -8,8 +8,8 @@ body {
 }
 
 img.profil {
-  width: 20%; /* Menggunakan persen untuk lebar gambar */
-  height: auto; /* Jaga aspek rasio */
+  width: 20%;
+  height: auto;
   border-radius: 100%;
   margin-top: 10px;
   margin-left: 3%;
@@ -23,7 +23,7 @@ nav {
   z-index: 300;
   display: flex;
   overflow: visible;
-  height: 10vh; /* Gunakan vh untuk tinggi navbar */
+  height: 10vh
 }
 
 nav ul {
@@ -34,9 +34,9 @@ nav ul {
 
 nav ul li.Nameuser {
   color: #ffffff;
-  font-size: 4vw; /* Menggunakan vw untuk ukuran font responsif */
+  font-size: 4vw;
   font-family: "Poppins", sans-serif;
-  margin: 2vw 3vw; /* Margin menggunakan persen */
+  margin: 2vw 3vw;
 }
 
 nav ul li {
