@@ -6,15 +6,17 @@ body {
   background-color: #1a1a1d;
   z-index: -1;
 }
-
 img.profil {
-  width: 20%;
-  height: auto;
+  width: auto;
+  height: 80%;
   border-radius: 100%;
-  margin-top: 10px;
+  margin-top: 7%;
   margin-left: 3%;
-}
-
+}
+span.profil {
+  display: flex;
+  width: 30%;
+}
 nav {
   top: 0;
   background-color: #000000;
@@ -23,131 +25,140 @@ nav {
   z-index: 300;
   display: flex;
   overflow: visible;
-  height: 10vh
+  height: 15vw;
 }
-
 nav ul {
   list-style-type: none;
   display: flex;
-  width: 100%;
 }
-
 nav ul li.Nameuser {
   color: #ffffff;
-  font-size: 4vw;
+  font-size: 3vw;
   font-family: "Poppins", sans-serif;
-  margin: 2vw 3vw;
+  margin-top: 0%;
+  margin-left: -100%;
 }
-
+nav ul.navtext {
+  list-style-type: none;
+  display: flex;
+  margin-left: -10%;
+}
 nav ul li {
   color: #ffffff;
-  font-size: 4vw;
+  font-size: 3vw;
   font-family: "Poppins", sans-serif;
-  margin: 2vw 4vw;
+  margin: 0% 7%;
 }
-
 p.headf {
-  margin: 20vh 10% 10% 10%; /* Margin responsif dengan vh dan % */
+  margin: 0% auto 30% auto;
   text-align: center;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-size: 10vw; /* Gunakan vw untuk ukuran font responsif */
+  font-size: 10vw;
   font-weight: bolder;
 }
-
 header {
   color: #ffffff;
-  padding: 5vh 0;
+  padding: 15% 0;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 10%;
 }
 
 header h1 {
-  font-size: 8vw; /* Gunakan vw untuk ukuran font responsif */
+  font-size: 10vw;
   margin: 0;
 }
 
 header p {
-  font-size: 3vw; /* Gunakan vw untuk ukuran font responsif */
+  font-size: 4vw;
+  margin: 5% 10% 0% 10%;
 }
 
 section {
   height: auto;
-  margin: 0 10%;
-  padding: 3vh 5%;
+  width: 80%;
+  margin: auto;
+  padding: 10% 5%;
   background: #000000;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: "Poppins", sans-serif;
 }
-
 section li {
   font-family: "Poppins", sans-serif;
   text-align: left;
-  font-size: 5vw; /* Menggunakan vw untuk ukuran font responsif */
+  font-size: 4vw;
   font-weight: bolder;
-  margin-bottom: 2vh;
-  margin-left: 2%;
-  margin-top: 2vh;
+  margin-left: -20%;
   color: #ffffff;
+  margin-top: 5%;
 }
-
 section ul {
+  margin-top: 0%;
   list-style-type: none;
 }
-
 section div {
-  margin-left: 0;
-  margin: 1vh;
+  margin-left: -15%;
+  margin-top: 2%;
   background: #ffffff;
   border-radius: 20px;
-  height: 1vh;
-  width: 95%; /* Menggunakan persen untuk lebar div */
+  width: 100%;
 }
-
-section div div.d1, section div div.d2, section div div.d3, section div div.d4, section div div.d5 {
+section div div.d1 {
   margin-left: 0;
   background: #da0037;
   border-radius: 20px;
-  height: 1vh;
-}
-
-section div div.d1 {
+  height: 2vw;
   width: 70%;
+  z-index: 2;
 }
-
 section div div.d2 {
+  margin-left: 0;
+  background: #da0037;
+  border-radius: 20px;
+  height: 2vw;
   width: 32%;
+  z-index: 2;
 }
-
 section div div.d3 {
+  margin-left: 0;
+  background: #da0037;
+  border-radius: 20px;
+  height: 2vw;
   width: 15%;
+  z-index: 2;
 }
-
 section div div.d4 {
+  margin-left: 0;
+  background: #da0037;
+  border-radius: 20px;
+  height: 2vw;
   width: 35%;
+  z-index: 2;
 }
-
 section div div.d5 {
+  margin-left: 0;
+  background: #da0037;
+  border-radius: 20px;
+  height: 2vw;
   width: 10%;
+  z-index: 2;
 }
-
 section h2 {
-  padding-left: 5%;
-  padding-top: 2vh;
+  padding-left: 25px;
+  padding-top: 15px;
   color: #35424a;
   text-align: justify;
 }
 
 footer {
-  margin-top: 10vh;
+  margin-top: 100px;
   text-align: center;
-  padding: 2vh 0;
+  padding: 10px 0;
   background: #35424a;
   color: #ffffff;
   z-index: 2;
 }
-
 p a {
   text-decoration: none;
   color: white;
