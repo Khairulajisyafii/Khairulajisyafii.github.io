@@ -5,17 +5,16 @@ body {
   padding: 0;
   background-color: #1a1a1d;
   z-index: -1;
-}
-img.profil {
+  height: auto;
   width: auto;
-  height: 80%;
-  border-radius: 100%;
-  margin-top: 7%;
-  margin-left: 3%;
 }
-span.profil {
+/*profil chef */
+nav img {
+  border-radius: 100%;
+  width: auto;
+  height: 85%;
+  margin: 1%;
   display: flex;
-  width: 30%;
 }
 nav {
   top: 0;
@@ -25,29 +24,60 @@ nav {
   z-index: 300;
   display: flex;
   overflow: visible;
-  height: 15vw;
-}
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-nav ul li.Nameuser {
-  color: #ffffff;
-  font-size: 3vw;
-  font-family: "Poppins", sans-serif;
-  margin-top: 0%;
-  margin-left: -100%;
+  height: 5em;
 }
 nav ul.navtext {
   list-style-type: none;
   display: flex;
-  margin-left: -10%;
+  margin-top: 30px;
+  padding-right: 10px;
 }
-nav ul li {
-  color: #ffffff;
-  font-size: 3vw;
+nav ul.navtexto {
+  list-style-type: none;
+  display: flex;
+  margin-top: 30px;
+  margin-left: -190px;
+}
+nav ul.navtext li.profil {
+  color: #da0037;
+  font-size: 1.3em;
+  margin-top: -22px;
+  margin-left: -25px;
+  margin-right: 80px;
   font-family: "Poppins", sans-serif;
-  margin: 0% 7%;
+  text-align: justify;
+  font-weight: bolder;
+}
+nav ul.navtext li.profil span.status {
+  color: #ffffff;
+  font-size: 0.7em;
+  margin-top: -20px;
+  margin-left: -25px;
+  margin-right: 80px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-weight: lighter;
+}
+nav ul.navtext li {
+  color: #ffffff;
+  font-size: 1em;
+  margin-left: 80px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
+nav ul.navtexto li {
+  color: #ffffff;
+  font-size: 1em;
+  margin-right: 15px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
+nav ul.navtexto li span.konten {
+  color: #ffffff;
+  font-size: 1em;
+  margin-right: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
 }
 p.headf {
   margin: 0% auto 30% auto;
@@ -56,6 +86,7 @@ p.headf {
   font-family: "Poppins", sans-serif;
   font-size: 10vw;
   font-weight: bolder;
+  margin-top: 100px;
 }
 header {
   color: #ffffff;
@@ -89,7 +120,7 @@ section li {
   text-align: left;
   font-size: 4vw;
   font-weight: bolder;
-  margin-left: -20%;
+  margin-left: 0px;
   color: #ffffff;
   margin-top: 5%;
 }
@@ -98,7 +129,7 @@ section ul {
   list-style-type: none;
 }
 section div {
-  margin-left: -15%;
+  margin-left: 0%;
   margin-top: 2%;
   background: #ffffff;
   border-radius: 20px;
