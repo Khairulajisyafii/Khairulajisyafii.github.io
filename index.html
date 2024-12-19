@@ -8,19 +8,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <title>Portofolio Khairul Aji Syafi'i</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body>
+  <body id="umah">
     <nav>
       <img src="objects/Photo/profil.jpg" alt="Profil" />
       <ul class="navtext">
-        <li class="profil">Anon<span class="status"><br>Unknown</span></li></li>
+        <li class="profil" id="Name">Khairul</li>
+        <li id="Status" class="status">Pelajar</li>
       </ul>
       <ul class="navtexto">
-        <li>Home</li>
-        <li>|</li>
-        <li>Contact</li>
-        </ul>
+        <li><a onclick="login()">Login</a></li>
+        <li><a href="#kontak">Contact</a></li>
+      </ul>
     </nav>
     <header>
       <h1>
@@ -34,6 +40,7 @@
       </p>
     </header>
     <p class="headf">Skills</p>
+    <img src="objects/Photo/roket.png" class="roket" />
     <section id="skills">
       <ul>
         <li style>HTML</li>
@@ -69,9 +76,15 @@
       </ul>
     </section>
 
-    <footer>
+    <footer id="kontak">
       <h2>Kontak Saya</h2>
-      <p><a href="https://www.facebook.com/khairul.a.syafii.3/">Facebook</a></p>
+      <div class="mutualan">
+        <p>
+          <a href="https://www.facebook.com/khairul.a.syafii.3/">Facebook</a>
+        </p>
+        <p><a href="https://www.instagram.com/kkkrulll/">Instagram</a></p>
+        <p><a href="https://github.com/Khairulajisyafii">Github</a></p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
