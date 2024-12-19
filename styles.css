@@ -36,13 +36,13 @@ nav ul.navtexto {
   list-style-type: none;
   display: flex;
   margin-top: 30px;
-  margin-left: -190px;
+  margin-left: -175px;
 }
 nav ul.navtext li.profil {
   color: #da0037;
   font-size: 1.3em;
-  margin-top: -22px;
-  margin-left: -25px;
+  margin-top: -25px;
+  margin-left: -30px;
   margin-right: 80px;
   font-family: "Poppins", sans-serif;
   text-align: justify;
@@ -120,7 +120,7 @@ section li {
   text-align: left;
   font-size: 4vw;
   font-weight: bolder;
-  margin-left: 0px;
+  margin-left: -40px;
   color: #ffffff;
   margin-top: 5%;
 }
@@ -129,11 +129,11 @@ section ul {
   list-style-type: none;
 }
 section div {
-  margin-left: 0%;
+  margin-left: -30px;
   margin-top: 2%;
   background: #ffffff;
   border-radius: 20px;
-  width: 100%;
+  width: 110%;
 }
 section div div.d1 {
   margin-left: 0;
