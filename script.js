@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function login() {
   let cek = 0;
-  var nama = prompt("Masukan nama panggilan  anda Maksimal 7 karakter");
-  if (nama.length > 7) {
+  var nama = prompt("Masukan nama panggilan  anda Maksimal 6 karakter");
+  if (nama.length > 6) {
     nama = "Anonim";
     cek = 1;
     alert("Nama melebihi Jumlah karakter,gagal login");
@@ -26,10 +26,7 @@ function login() {
       cek = 1;
       alert("Status kosong,gagal login");
     }
-    ubah();
   }
-  function ubah() {
-    document.getElementById("Name").innerHTML = nama;
-    document.getElementById("Status").innerHTML = status;
-  }
+  document.getElementById("Name").innerHTML = nama;
+  document.getElementById("Status").innerHTML = status;
 }
