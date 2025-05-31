@@ -15,15 +15,17 @@ const TYPE_SPEED = {
 const dom = {
   typing: document.getElementById("typing"),
   rainbow: document.getElementById("rainbow"),
-  contactSection: document.querySelector(".contact-section"),
+  contactSection: document.querySelector(".contact-endpoint"),
+  projectSection: document.querySelector(".project-endpoint"),
   displays: document.querySelectorAll(".display"),
   children: document.querySelectorAll(".child"),
   projectsSlider: document.getElementById("projectsSlider"),
   pages: {
-    page1: document.querySelectorAll(".page1"),
-    page2: document.querySelectorAll(".page2"),
+    page1: document.querySelectorAll(".home"),
+    page2: document.querySelectorAll(".about"),
     page3: document.querySelectorAll(".page3"),
-    contact: document.querySelectorAll(".page2-contact"),
+    contact: document.querySelectorAll(".contact"),
+    project: document.querySelectorAll(".project"),
   },
 };
 
@@ -79,25 +81,29 @@ function updateColor() {
 }
 
 // Page Switching
-function switchPage(pageIndex, scrollToContact = false) {
+function switchPage(
+  pageIndex,
+  scrollToContact = false,
+  scrollToProject = false
+) {
   dom.displays.forEach((display, index) => {
     display.style.display = index === pageIndex ? "block" : "none";
   });
 
   if (scrollToContact && dom.contactSection) {
-    dom.contactSection.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
+    smoothScrollToElement(dom.contactSection);
+  }
+  if (scrollToProject && dom.projectSection) {
+    smoothScrollToElement(dom.projectSection);
   }
 }
 
-// Initialize Page Switcher
+// Initialize Pag)e Switcher
 function initPageSwitcher() {
   Object.entries(dom.pages).forEach(([pageName, pageElements], pageIndex) => {
     pageElements.forEach((element) => {
       element.addEventListener("click", () => {
-        switchPage(pageIndex, pageName === "contact");
+        switchPage(pageIndex, pageName === "contact", pageName === "project");
       });
     });
   });
@@ -127,7 +133,34 @@ function initImageHoverEffects() {
   });
 }
 
-// Project Scrolling
+// scroll target
+function smoothScrollToElement(element, duration = 1000) {
+  const targetPosition =
+    element.getBoundingClientRect().top + window.pageYOffset;
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (!startTime) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function ease(t, b, c, d) {
+    // easeInOutQuad
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
+
+//project scrolling
 function scrollProjects(direction) {
   const scrollAmount = 300;
   dom.projectsSlider?.scrollBy({
@@ -145,6 +178,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Add contact scroll triggers
   dom.pages.contact.forEach((el) => {
-    el.addEventListener("click", () => switchPage(1, true));
+    el.addEventListener("click", () => switchPage(1, true, false));
+  });
+  dom.pages.project.forEach((el) => {
+    el.addEventListener("click", () => switchPage(1, false, true));
   });
 });

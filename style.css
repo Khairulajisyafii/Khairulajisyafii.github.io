@@ -197,8 +197,7 @@ li:hover {
   font-weight: bold;
   transition: color 0.1s, text-shadow 0.1s;
 }
-.display:nth-of-type(2),
-.display:nth-of-type(3) {
+.display:nth-of-type(2) {
   display: none;
 }
 .projects-section {
