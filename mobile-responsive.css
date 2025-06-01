@@ -1,4 +1,41 @@
 @media screen and (max-width: 460px) {
+  /* homepage */
+  .banner-text {
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    margin: 100px auto 0px auto;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .child-banner-text {
+    width: 350px;
+    text-align: center;
+    margin: 10px auto;
+    font-family: "Crimson Text", serif;
+    font-size: 12px;
+  }
+  .container-bottom {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    text-align: center;
+    align-items: center;
+  }
+  .nav-bottom {
+    display: flex;
+    list-style-type: none;
+  }
+  .nav-bottom li {
+    font-size: 10px;
+    margin: 0px 10px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 6px 20px;
+    min-width: 70px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  /* aboutme page */
   .headline {
     display: flex;
     flex-direction: column-reverse;
@@ -29,7 +66,7 @@
   }
   .container-bottom-2 ul li {
     padding: 2px 5px;
-    font-size: 7px;
+    font-size: 10px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;
     min-width: 70px;
@@ -42,5 +79,21 @@
     width: 150px;
     margin: auto;
     border: 5px solid #0b60b0;
+  }
+  .watermark {
+    font-size: 15px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  .nav-btn.left {
+    position: absolute;
+    left: -10px;
+    display: none;
+  }
+
+  .nav-btn.right {
+    position: absolute;
+    right: -10px;
+    display: none;
   }
 }
