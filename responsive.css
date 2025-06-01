@@ -224,50 +224,54 @@
     margin: auto;
     border: 7px solid #0b60b0;
   }
-}
-@media screen and (max-width: 460px) {
-  .headline {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .headline-section {
-    margin: auto;
-    width: 100%;
-  }
-  .banner-text-main {
-    width: 200px;
-    height: fit-content;
+  .title {
     font-size: 30px;
-    margin: 10px auto;
-  }
-  .banner-text-2 {
-    width: 250px;
-    height: auto;
-    font-size: 10px;
-    margin-top: 0px;
-  }
-  .container-bottom-2 {
-    width: 200px;
-    margin: 20px auto;
-  }
-
-  .container-bottom-2 ul {
-    gap: 30px;
-  }
-  .container-bottom-2 ul li {
-    padding: 2px 5px;
-    font-size: 7px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    min-width: 70px;
-  }
-  .headline-profil {
-    margin-top: 30px;
-    width: 100%;
-  }
-  .profil {
+    font-weight: bold;
+    text-align: center;
+    margin: 90px auto 90px auto;
     width: 150px;
-    margin: auto;
-    border: 5px solid #0b60b0;
+  }
+  .title#about {
+    font-size: 30px;
+    text-align: center;
+    margin: -50px auto auto auto;
+    width: 150px;
+  }
+  .content {
+    font-size: 15px;
+    width: 90%;
+    margin: 50px auto 0px auto;
+    text-align: center;
+    align-items: center;
+  }
+  .skill-section {
+    width: 80%;
+    display: flex;
+    margin: 50px auto 0px auto;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+  }
+  .skill-section div img {
+    width: 100px;
+    height: auto;
+  }
+  .contact-section {
+    width: 80%;
+    display: flex;
+    margin: 50px auto 0px auto;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  .contact-section > a > img {
+    width: 50px;
+    aspect-ratio: 1/1;
   }
 }

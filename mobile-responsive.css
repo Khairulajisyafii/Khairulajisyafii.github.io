@@ -1,0 +1,46 @@
+@media screen and (max-width: 460px) {
+  .headline {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .headline-section {
+    margin: auto;
+    width: 100%;
+  }
+  .banner-text-main {
+    width: 200px;
+    height: fit-content;
+    font-size: 30px;
+    margin: 10px auto;
+  }
+  .banner-text-2 {
+    width: 250px;
+    height: auto;
+    font-size: 10px;
+    margin-top: 0px;
+  }
+  .container-bottom-2 {
+    width: 200px;
+    margin: 20px auto;
+  }
+
+  .container-bottom-2 ul {
+    gap: 30px;
+  }
+  .container-bottom-2 ul li {
+    padding: 2px 5px;
+    font-size: 7px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    min-width: 70px;
+  }
+  .headline-profil {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .profil {
+    width: 150px;
+    margin: auto;
+    border: 5px solid #0b60b0;
+  }
+}
