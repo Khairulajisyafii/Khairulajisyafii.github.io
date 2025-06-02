@@ -479,13 +479,20 @@ li:hover {
 
   .nav-btn.left {
     left: -5px;
+    display: none;
   }
 
   .nav-btn.right {
     right: -5px;
+    display: none;
   }
 
   .projects-section {
     padding: 40px 10px;
+  }
+  .nav-bottom li {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 4px 15px;
+    font-size: 12px;
   }
 }
